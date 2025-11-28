@@ -37,7 +37,7 @@ interface Product {
   reviews: string;
 }
 
-// Components
+
 const NavItem: FC<NavItemProps> = ({ icon, label }) => (
   <div className="flex flex-col cursor-pointer hover:text-gray-300 items-center">
     {icon}
@@ -45,7 +45,7 @@ const NavItem: FC<NavItemProps> = ({ icon, label }) => (
   </div>
 );
 
-// Data
+
 const features: Feature[] = [
   { icon: "/icons/Feel-Energized-icon1.png", text: "Feel Energized" },
   { icon: "/icons/Support-Weight-Loss-icon1.png", text: "Support Weight Loss" },
@@ -110,7 +110,7 @@ const featuredProducts: Product[] = [
   },
 ];
 
-// Learn Section Data (pakai icon Feel Energized, Support Weight Loss, Enjoy Tasty Food)
+
 const faqs = [
   {
     id: 1,
@@ -135,7 +135,7 @@ const faqs = [
   },
 ];
 
-// Page
+
 const HomePage: FC = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(1);
 
@@ -467,7 +467,7 @@ const HomePage: FC = () => {
       </section>
 
 
-  /* Customers Love Section */
+
 <section className="w-full bg-white py-16 px-6 text-center">
   {/* Header */}
   <div className="flex flex-col items-center mb-10">
